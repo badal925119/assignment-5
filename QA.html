@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom questions and Answers</title>
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- DaisyUI and Tailwindcss CDN Link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary:'rgb(180, 244, 97)',
+                bgColor: 'rgb(249, 247, 243)',
+              },
+              fontFamily:{
+                lexend:'Lexend',
+                coin:'rgba(17, 17, 17, 0.0',
+              }
+            },
+          },
+        }
+      </script>
+
+ 
+</head>
+<body class="w-11/12 m-auto">
+    <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium font-lexend">What is the difference between let, const, and var?</div>
+        <div class="collapse-content">
+          <p class="font-lexend"> Answer: var: Function-scoped, can be redeclared, and hoisted.
+            let: Block-scoped, cannot be redeclared in the same scope, hoisted but not initialized.
+            const: Block-scoped, cannot be reassigned after its declaration, hoisted but not initialized.</p>
+        </div>
+      </div>
+      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium font-lexend">What are arrow functions in JavaScript?
+        </div>
+        <div class="collapse-content">
+          <p class="font-lexend">Answer: Arrow functions are a shorter syntax for writing functions. They do not have their own this, arguments, super, or new.target and are best suited for non-method functions.</p>
+        </div>
+      </div>
+      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium font-lexend">What is the difference between == and ===?</div>
+        <div class="collapse-content">
+          <p class="font-lexend">Answer:
+                    ==: Performs type coercion before comparison (loose equality). <br>
+                    ===: Compares both value and type without coercion (strict equality).</p>
+        </div>
+      </div>
+      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium font-lexend">What is the this keyword in JavaScript?</div>
+        <div class="collapse-content">
+          <p class="font-lexend">Answer: this refers to the object it belongs to. It can change depending on the context:
+            Inside a method: Refers to the object calling the method.
+            Inside a function: Refers to the global object (in non-strict mode).
+            Inside an arrow function: Inherits this from the surrounding lexical context.</p>
+        </div>
+      </div>
+      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium font-lexend"> What are Promises in JavaScript?</div>
+        <div class="collapse-content">
+          <p class="font-lexend">Promise has three states: pending, fulfilled, and rejected.
+        </p>
+        </div>
+      </div>
+      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium font-lexend">What is event delegation in JavaScript?</div>
+        <div class="collapse-content">
+          <p class="font-lexend">Answer: Event delegation is a technique where a single event listener is added to a parent element to handle events of its children, taking advantage of event bubbling.</p>
+        </div>
+      </div>
+      
+</body>
+</html>
