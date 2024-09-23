@@ -52,7 +52,7 @@ document.getElementById('donate-button1').addEventListener('click', function(){
     showAlart('Minumum Amount 1tk')
     return;
    } 
-
+   
    if(donateInput > mainBlance){
     showAlart('Not Enough Blance')
     return;
@@ -67,11 +67,73 @@ document.getElementById('donate-button1').addEventListener('click', function(){
    const div = document.createElement('div')
    div.innerHTML=`
    <div class ="bg-gray-200 my-3 p-3 rounded-md border-l-2 border-indigo-500">
-   <p class="font-lexend font-bold text-2xl">${donateInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+   <p class="font-lexend font-bold text-2xl">${donateInput} Taka is Donate for Flood at Noakhali, Bangladesh</p>
   <p class="font-lexend">${new Date}</p>
     
     </div>`
     donateHistory.insertBefore(div,donateHistory.firstChild)
  
     
+})
+
+
+// donate button-2 function
+document.getElementById('donate-button2').addEventListener('click', function(){
+    const donateTk =parseFloat(document.getElementById('donate-tk2').innerText);
+    const donateInput =parseFloat(document.getElementById('input-tk2').value);
+    if(donateInput <= 0){
+        showAlart('Minumum Amount 1tk')
+        return;
+       } 
+    
+       if(donateInput > mainBlance){
+        showAlart('Not Enough Blance')
+        return;
+       }
+    const newMain = mainBlance-donateInput;
+    const totalDonate = donateTk+donateInput;
+    mainBlance=newMain
+    document.getElementById('main-blance').innerText=newMain;
+   document.getElementById('donate-tk2').innerText=totalDonate;
+   showAlart('Dontion sucsessfull')
+
+   const div = document.createElement('div')
+   div.innerHTML=`
+   <div class ="bg-gray-200 my-3 p-3 rounded-md border-l-2 border-indigo-500">
+   <p class="font-lexend font-bold text-2xl">${donateInput} Taka is Donate for Flood Relief in Feni,Bangladesh</p>
+  <p class="font-lexend">${new Date}</p>
+    
+    </div>`
+    donateHistory.insertBefore(div,donateHistory.firstChild)
+})
+
+
+// donate button-3 function
+document.getElementById('donate-button3').addEventListener('click', function(){
+    const donateTk =parseFloat(document.getElementById('donate-tk3').innerText);
+    const donateInput =parseFloat(document.getElementById('input-tk3').value);
+    if(donateInput <= 0){
+        showAlart('Minumum Amount 1tk')
+        return;
+       } 
+    
+       if(donateInput > mainBlance){
+        showAlart('Not Enough Blance')
+        return;
+       }
+    const newMain = mainBlance-donateInput;
+    const totalDonate = donateTk+donateInput;
+    mainBlance=newMain
+    document.getElementById('main-blance').innerText=newMain;
+   document.getElementById('donate-tk3').innerText=totalDonate;
+   showAlart('Dontion sucsessfull')
+
+   const div = document.createElement('div')
+   div.innerHTML=`
+   <div class ="bg-gray-200 my-3 p-3 rounded-md border-l-2 border-indigo-500">
+   <p class="font-lexend font-bold text-2xl">${donateInput} Taka is Aid for Injured in the Quota Movement</p>
+  <p class="font-lexend">${new Date}</p>
+    
+    </div>`
+    donateHistory.insertBefore(div,donateHistory.firstChild)
 })
