@@ -33,58 +33,79 @@
 
  
 </head>
-<body class="w-11/12 m-auto">
-    <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium font-lexend">What is the difference between let, const, and var?</div>
-        <div class="collapse-content">
-          <p class="font-lexend"> Answer: var: Function-scoped, can be redeclared, and hoisted.
-            let: Block-scoped, cannot be redeclared in the same scope, hoisted but not initialized.
-            const: Block-scoped, cannot be reassigned after its declaration, hoisted but not initialized.</p>
+
+<body >
+
+  <nav class="bg-bgColor sticky z-50 shadow-lg top-0 grid grid-cols-1 h-28">
+    <div class="w-11/12 m-auto gap-2 my-3 flex-wrap flex justify-between items-center">
+        <a href="./index.html" id="home" class="bg-primary p-3  mt-2 font-bold w-[110px] h-[48px] flex items-center justify-center text-lg rounded-md font-lexend">Home</a>
+        <div class="flex items-center mt-2">
+            <img class="w-[35px] sm:w-[43px]" src="./assets/logo.png" alt="Logo">
+            <p class="ml-2 mt-4 text-base sm:text-lg font-lexend font-bold">Donate Bangladesh</p>
         </div>
-      </div>
+        <div class="flex items-center">
+            <img src="./assets/coin.png" alt="Coin">
+            <p id="main-blance" class="text-base sm:text-lg font-lexend font-semibold text-gray-600 ml-2">10000</p>
+            <p class="text-base sm:text-lg font-lexend font-semibold text-gray-600">BDT</p>
+        </div>
+    </div>
+  </nav>
+
+  <div class="w-10/12 m-auto">
+    <h1 class="text-5xl font-lexend font-bold my-8">
+      Important FAQ?
+    </h1>
       <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium font-lexend">What are arrow functions in JavaScript?
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium font-lexend"> What is the DOM in JavaScript?</div>
+          <div class="collapse-content">
+            <p class="font-lexend"> Answer: The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, with each object corresponding to an element or node in the HTML. Using the DOM, JavaScript can manipulate the content, structure, and style of a web page dynamically.
+  
+            </p>
+          </div>
         </div>
-        <div class="collapse-content">
-          <p class="font-lexend">Answer: Arrow functions are a shorter syntax for writing functions. They do not have their own this, arguments, super, or new.target and are best suited for non-method functions.</p>
+        <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium font-lexend"> How do you select an element by its ID in the DOM?
+          </div>
+          <div class="collapse-content">
+            <p class="font-lexend">Answer: You can select an element by its ID using the document.getElementById() method.</p>
+          </div>
         </div>
-      </div>
-      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium font-lexend">What is the difference between == and ===?</div>
-        <div class="collapse-content">
-          <p class="font-lexend">Answer:
-                    ==: Performs type coercion before comparison (loose equality). <br>
-                    ===: Compares both value and type without coercion (strict equality).</p>
+        <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium font-lexend">How can you add a new element to the DOM?</div>
+          <div class="collapse-content">
+            <p class="font-lexend">Answer: To add a new element to the DOM, you use document.createElement() to create the element and appendChild() to insert it into the DOM.
+  
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium font-lexend">What is the this keyword in JavaScript?</div>
-        <div class="collapse-content">
-          <p class="font-lexend">Answer: this refers to the object it belongs to. It can change depending on the context:
-            Inside a method: Refers to the object calling the method.
-            Inside a function: Refers to the global object (in non-strict mode).
-            Inside an arrow function: Inherits this from the surrounding lexical context.</p>
+        <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium font-lexend">How do you change the content of an HTML element using the DOM?</div>
+          <div class="collapse-content">
+            <p class="font-lexend">Answer: You can change the content of an HTML element using the innerHTML, textContent, or innerText properties.</p>
+          </div>
         </div>
-      </div>
-      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium font-lexend"> What are Promises in JavaScript?</div>
-        <div class="collapse-content">
-          <p class="font-lexend">Promise has three states: pending, fulfilled, and rejected.
-        </p>
+        <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium font-lexend">  How can you remove an element from the DOM?</div>
+          <div class="collapse-content">
+            <p class="font-lexend">Answer: You can remove an element using the removeChild() method or the remove() method.
+          </p>
+          </div>
         </div>
-      </div>
-      <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium font-lexend">What is event delegation in JavaScript?</div>
-        <div class="collapse-content">
-          <p class="font-lexend">Answer: Event delegation is a technique where a single event listener is added to a parent element to handle events of its children, taking advantage of event bubbling.</p>
+        <div class="collapse my-4 border-t-2 border-green-500  collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium font-lexend">How do you attach an event listener to an element in the DOM?</div>
+          <div class="collapse-content">
+            <p class="font-lexend">Answer: You can attach an event listener using the addEventListener() method. This method takes two arguments: the event type (e.g., "click") and the function to run when the event occurs.</p>
+          </div>
         </div>
-      </div>
-      
+        
+<script src="./index.js"></script>
+  </div>
+ 
 </body>
 </html>

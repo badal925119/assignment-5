@@ -21,8 +21,9 @@ const donateHistory = document.getElementById('donate-history')
 
 // blog click section
 document.getElementById('blog').addEventListener('click', function(){
-    window.location.href ='./QA.html'
+    window.location.href ='./QA.html'  
 })
+
 
 // Donate and History button section
 const donateTab =document.getElementById('donate-tab')
